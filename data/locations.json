@@ -1,0 +1,58 @@
+[
+    {
+        "locationid": "0001",
+        "name": "Cesena Train Station"
+    },
+    {
+        "locationid": "0002",
+        "name": "Ravenna Sports Center"
+    },
+    {
+        "locationid": "0003",
+        "name": "Bologna Train Station"
+    },
+    {
+        "locationid": "0004",
+        "name": "Bologna Pharmacy"
+    },
+    {
+        "locationid": "0005",
+        "name": "Rimini Shopping Center"
+    },
+    {
+        "locationid": "0006",
+        "name": "Rimini Sports Center"
+    },
+    {
+        "locationid": "0007",
+        "name": "Cesena University Campus"
+    },
+    {
+        "locationid": "0008",
+        "name": "Forli Shopping Center"
+    },
+    {
+        "locationid": "0009",
+        "name": "Forli Sports Center"
+    },
+    {
+        "locationid": "0010",
+        "name": "Ravenna Shopping Center"
+    },
+    {
+        "locationid": "0011",
+        "name": "Ravenna Train Station"
+    },
+    {
+        "locationid": "0012",
+        "name": "Bologna University Campus"
+    },
+    {
+        "locationid": "0013",
+        "name": "Rimini Train Station"
+    },
+    {
+        "locationid": "0014",
+        "name": "Rimini University Campus"
+    }
+]

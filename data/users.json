@@ -1,0 +1,50 @@
+[
+    {
+        "userId": "alefc",
+        "name": "alessandro",
+        "city": "FC",
+        "locations": ["0001", "0007"]
+    },
+    {
+        "userId": "giura",
+        "name": "giulia",
+        "city": "RA",
+        "locations": ["0002"]
+    },
+    {
+        "userId": "ricbo",
+        "name": "riccardo",
+        "city": "BO",
+        "locations": ["0003", "0004"]
+    },
+    {
+        "userId": "emmrn",
+        "name": "emma",
+        "city": "RN",
+        "locations": ["0005", "0006", "0013"]
+    },
+    {
+        "userId": "lorra",
+        "name": "lorenzo",
+        "city": "RA",
+        "locations": ["0010", "0011"]
+    },
+    {
+        "userId": "marbo",
+        "name": "martina",
+        "city": "BO",
+        "locations": ["0012"]
+    },
+    {
+        "userId": "marfc",
+        "name": "marcello",
+        "city": "FC",
+        "locations": ["0008", "0007", "0009"]
+    },
+    {
+        "userId": "crirn",
+        "name": "cristina",
+        "city": "RN",
+        "locations": ["0013", "0014"]
+    } 
+]
