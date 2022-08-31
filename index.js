@@ -2,6 +2,10 @@ const express = require('express')
 const app = express()
 const port = 5000
 
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended: true})); 
+app.use(bodyParser.json()); 
+
 const users = require('./models/users')
 const locations = require("./data/locations.json")
 
@@ -27,9 +31,9 @@ app.get('/users', (req, res) => {
 app.post("/users", (req, res) => {
 	try {
 		users.registerNewUser(req.body.userId, req.body.name, req.body.city)
-		res.send(users.getAccountById(req.body.userId))
-	} catch (err){
-		res.sendStatus(400);
+		res.json(users.getUserById(req.body.userId))
+	} catch (error){
+		res.status(400).json({ error });
 	}	
 })
 

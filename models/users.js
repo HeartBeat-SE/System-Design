@@ -19,15 +19,12 @@ class Users {
       }
 	}
 
-	registerNewUser(id, name, city){
-		console.log("Registering new user: " + id)
-		if (!this.isUserAlreadyRegistered(id)){
-			console.log("GOOD: not present")
-			this.users.set(id, new User(id, name, city, []))
-		} else {
-			console.log("BAD: user already here")
-			throw 'Duplicate id'
+	registerNewUser(id, name, city) {
+		if (this.isUserAlreadyRegistered(id)) {
+            throw 'Duplicate id'
 		}
+        let user = new User(id, name, city, [])
+        this.users.set(id, user)
 	}
 
 	isUserAlreadyRegistered(id){
