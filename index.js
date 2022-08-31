@@ -9,6 +9,7 @@ app.use(bodyParser.json());
 const users = require('./models/users')
 const locations = require("./data/locations.json")
 
+// dto = Data Transfer Object
 function convertToUserDto(user){
     return {
         userId: user.userId,
