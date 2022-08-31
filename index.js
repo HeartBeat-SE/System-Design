@@ -13,6 +13,10 @@ function convertToUserDto(user){
     }
 }
 
+app.get("/", (req, res) => {
+	res.send("This is an API between users and the list of AEDs")
+})
+
 app.get('/users', (req, res) => {
     let dto = users
         .map(convertToUserDto)
