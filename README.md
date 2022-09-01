@@ -2,7 +2,7 @@
 
 This project was created using (JavaScript/NodeJS/Express BOOOOH CAZZO NE SO?).
 
-The folder [data](System-Design/data) includes two json files containing the source data of users and AED locations.
+The folder [data](System-Design/tree/main/data) includes two json files containing the source data of users and AED locations.
 
 The [user model](models/users.js) shapes the operations that can be done between users and AED locations through APIs.
 
