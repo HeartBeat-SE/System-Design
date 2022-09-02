@@ -21,7 +21,7 @@ function convertToUserDto(user){
 }
 
 app.get("/", (req, res) => { 
-	res.send("This is an API between users and the list of AEDs") // message displayed with get: http://localhost:5000/
+	res.send("This is an API between users and AED locations") // message displayed with get: http://localhost:5000/
 })
 
 app.get('/users', (req, res) => { // take users data from getAllUsers (array), convertToUserDto (keep userId, name, city) and convert them to json
