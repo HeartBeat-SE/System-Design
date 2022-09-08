@@ -6,7 +6,7 @@ The folder [data](data) includes two json files containing the source data of us
 
 In the [user model](models/users.js) it is implemented the behavior of the APIs.
 
-Finally, the [index file](index.js) models the API endpoints that enable communications between clients and servers.
+The [index file](index.js) models the API endpoints that enable communications between clients and servers.
 
 ## API endpoints
 
