@@ -8,7 +8,7 @@ In the [user model](models/users.js) it is implemented the behavior of the APIs.
 
 The [index file](index.js) models the API endpoints that enable communications between clients and servers.
 
-## API endpoints
+## API Endpoints
 
 1. Execute the index file
 2. The server runs on port 5000
@@ -16,7 +16,7 @@ The [index file](index.js) models the API endpoints that enable communications b
 4. `GET /locations` to see the list of AED locations
 5. `POST /users` to add a new user
 
-It is possible to simulate the use case in which, during the emergency progress management, the system needs to identify the AEDs that are located nearby the selected first responders. 
+It is possible to simulate the use case in which, during the emergency progress management, the system needs to identify the first responders that are located nearby the selected AEDs. 
 
 6. `GET /locations/:id/users`
 
