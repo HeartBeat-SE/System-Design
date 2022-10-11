@@ -10,6 +10,17 @@ class User {
 	}
 
 }
+
+class Emergency {
+
+	constructor(id, time, locations, reference) {
+		this.emergencyid = id;
+		this.time = time;
+		this.locations = locations;
+		this.reference = reference
+	}
+}
+
 class Users {
 	
 	constructor() {
