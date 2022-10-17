@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 
 const userModel = require('./models/users') // require -> import
 const locations = require("./data/locations.json")
+const emergencyModel = require('./models/emergency')
 
 // dto = Data Transfer Object -> define data of user (no locations)
 function convertToUserDto(user){
@@ -17,6 +18,16 @@ function convertToUserDto(user){
         userId: user.userId,
         name: user.name,
         city: user.city
+    }
+}
+
+function convertToEmergencyDto(emergency){
+    return {
+        emergencyId: emergency.emergencyId,
+        time: emergency.time,
+        latitude: emergency.latitude,
+        longitude: emergency.longitude,
+        reference: emergency.reference
     }
 }
 
@@ -31,17 +42,36 @@ app.get('/users', (req, res) => { // take users data from getAllUsers (array), c
         dto.push(userDto)
     }
 
+    res.json(dto)
+})
+
+app.get('/emergencies', (req, res) => {
+    let dto = []
+    for(emergency of emergencyModel.getAllEmergencies()){
+        let emergencyDto = convertToEmergencyDto(emergency)
+        dto.push(emergencyDto)
+    }
+    res.json(dto)
+})
+
     // let dto = userModel
     //     .getAllUsers()
     //     .map(convertToUserDto)
 
-    res.json(dto)
-})
 
 app.post("/users", (req, res) => { 
 	try {
 		userModel.registerNewUser(req.body.userId, req.body.name, req.body.city) // take as input userId, name, city
 		res.json(userModel.getUserById(req.body.userId)) // create a new user with inserted values
+	} catch (error){
+		res.status(400).json({ error });
+	}	
+})
+
+app.post("/emergencies", (req, res) => { 
+	try {
+		emergencyModel.registerNewEmergency(req.body.emergencyId, req.body.time, req.body.longitude, req.body.latitude, req.body.reference)
+		res.json(emergencyModel.getEmergencyById(req.body.emergencyId))
 	} catch (error){
 		res.status(400).json({ error });
 	}	

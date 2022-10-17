@@ -5,7 +5,8 @@ class Emergency {
 	constructor(id, time, latitude, longitude, reference) {
 		this.emergencyId = id;
 		this.time = time;
-		this.locations = locations;
+		this.latitude = latitude;
+		this.longitude = longitude;
 		this.reference = reference
 	}
 }
