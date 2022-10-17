@@ -12,16 +12,17 @@ class Emergency {
 }
 
 class Emergencies {
+
     constructor() {
 		this.emergencies = new Map()
 		for(let e of emergencies_data_template){
-		  this.emergencies.set(new Emergency(e.emergencyId, e,time, e.latitude, e.longitude, e.reference))
+		  this.emergencies.set(e.emergencyId, new Emergency(e.emergencyId, e.time, e.latitude, e.longitude, e.reference))
 		}
 	  }
 
 	  registerNewEmergency(id, time, latitude, longitude, reference) {
-        let emergency = new Emergency(id, time, latitude, longitude, reference [])
-        this.emergencies.set(id, time, latitude, longitude, reference)
+        let emergency = new Emergency(id, time, latitude, longitude, reference)
+        this.emergencies.set(id, emergency)
 
 	}
 

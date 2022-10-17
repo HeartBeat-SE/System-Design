@@ -92,4 +92,3 @@ app.get('/locations/:id/users', (req, res) => {
 app.listen(port, () => { // select the port in which it runs
     console.log("Server started on port " + port)
 })
-
