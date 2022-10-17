@@ -51,6 +51,7 @@ app.get('/emergencies', (req, res) => {
         let emergencyDto = convertToEmergencyDto(emergency)
         dto.push(emergencyDto)
     }
+    
     res.json(dto)
 })
 
