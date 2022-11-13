@@ -18,6 +18,7 @@ The [index file](index.js) models the API endpoints that enable communications b
 4. `GET /emergencies` to see the emergency details
 4. `GET /locations` to see the list of AED locations
 5. `POST /users` to add a new user
+6. `POST /emergencies` to add a new emergency
 
 It is possible to simulate the use case in which, during the emergency progress management, the system needs to identify the first responders that are located nearby the selected AEDs. 
 
