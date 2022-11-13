@@ -6,7 +6,7 @@ The folder [data](data) includes two json files containing the source data of us
 
 In the [user model](models/users.js) it is implemented the behavior of the users' APIs.
 
-In the [emergency model](models/emergency.js) it is implemented the behavior emergencies' APIs.
+In the [emergency model](models/emergency.js) it is implemented the behavior of the emergencies' APIs.
 
 The [index file](index.js) models the API endpoints that enable communications between clients and servers.
 
